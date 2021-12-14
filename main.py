@@ -26,7 +26,7 @@ data = np.loadtxt(open("questions.csv", "rb"), delimiter=",", skiprows=1)
 
 ## one liner
 # fit first 4 v 5th(last)
-# study per week, years, books, projects, ear, rating
+# study per week, years, books, projects, earn, rating
 neural_net = MLPRegressor(max_iter=10000).fit(data[:, :-1], data[:, -1])
 
 
