@@ -1,7 +1,7 @@
 # API-3
-html, javascript, FastAPI
+### html, javascript, FastAPI
 
-# remember to add code in fastapi to allow CORS
+    #remember to add code in fastapi to allow CORS
 
     import uvicorn
     from fastapi import FastAPI
