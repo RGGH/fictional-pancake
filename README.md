@@ -29,3 +29,9 @@ html, javascript, FastAPI
     ---
     
     https://www.stackhawk.com/blog/configuring-cors-in-fastapi/
+
+---
+
+Try the code here : http://redandgreen.co.uk/indexx.html
+
+---
