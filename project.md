@@ -3,8 +3,8 @@
 ---
 <span style="color:red">Introduction</span>
 ---
-    TL;DR
-    Rather than use Flask, Heroku and the usual CRUD example I wanted to demonstrate how to use Python code with a machine learning example, and create a front end using an html page served from my existing, remotely hosted domain: redandgreen.co.uk
+TL;DR
+Rather than use Flask, Heroku and the usual CRUD example I wanted to demonstrate how to use Python code with a machine learning example, and create a front end using an html page served from my existing, remotely hosted domain: redandgreen.co.uk
 
 ### Prerequisites:
 - Python Coding skills
