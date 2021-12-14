@@ -3,12 +3,12 @@
 h2{
 background-color: #FEFFED;
 padding: 30px 35px;
-margin: -10px -50px;
+
 text-align:center;
 border-radius: 10px 10px 0 0;
 }
 hr{
-margin: 10px -50px;
+margin: 10px -20px;
 border: 0;
 border-top: 1px solid #ccc;
 margin-bottom: 40px;
@@ -16,17 +16,20 @@ margin-bottom: 40px;
 div.container{
 width: 900px;
 height: 610px;
-margin:35px auto;
+margin:25px auto;
 font-family: 'Raleway', sans-serif;
 }
 div.main{
 width: 300px;
 padding: 10px 50px 10px;
-border: 2px solid gray;
+border: 2px solid rgb(192, 130, 130);
 border-radius: 10px;
 font-family: raleway;
-float:left;
-margin-top:60px;
+
+margin-top:20px;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 input[type=text]{
 width: 100%;
