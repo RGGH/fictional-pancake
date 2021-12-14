@@ -25,3 +25,7 @@ html, javascript, FastAPI
         allow_methods=["*"],
         allow_headers=["*"],
     )
+    
+    ---
+    
+    https://www.stackhawk.com/blog/configuring-cors-in-fastapi/
