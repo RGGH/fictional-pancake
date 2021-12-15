@@ -2,6 +2,9 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>ML API example</title>
 <!-- Include CSS File Here -->
 <link rel="stylesheet" href="css/submit_javascript.css"/>
@@ -13,38 +16,61 @@
 <div class="container">
 <div class="main">
 
+<br>
+<form action=# method="POST" name="form_name" id="form_id" class="form-horizontal" role="form" >
 
-<form action=# method="POST" name="form_name" id="form_id" class="form_class" >
-    <h2>ML Neural Network API</h2>
 
-    <label>Hours Per Week :</label>
-    <input type="text" name="weeks" id="week" placeholder="hours studied" />
-    <label>Years using Python  :</label>
-    <input type="text" name="years" id="years" placeholder="years learning" />
-    <label>Numnber of Python Books  :</label>
-    <input type="text" name="books" id="books" placeholder="books owned" />
-    <label>Python Projects Built  :</label>
-    <input type="text" name="projects" id="projects" placeholder="projects completed" />
-    <label>Money Earned Coding Python :</label>
-    <input type="text" name="earn" id="earn" placeholder="amount earned" />
-
-    <input type="button" name="submit" id="btn_id" value="submit!" onclick="SubmitVars()"/>
-   
-    <p id="demo">Rating (1500 is good)</p>
-
+<div class="container">
+    <h1>ML FastAPI Python Skill Rating Calculator</h1>
     <br>
-
-<a href="https://github.com/RGGH/API-3">ML + FastAPI code on GitHub</a> 
+        <form class="form-horizontal" role="form">
+          <div class="form-group">
+            <label for="weeks" class="col-sm-2 control-label">Hours Study/Week:</label>
+            <div class="col-sm-3">
+              <input type="text" class="form-control inputstl" id="weeks" placeholder="Hours Per Week">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="years" class="col-sm-2 control-label">Years Learning Python</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control inputstl" id="years" placeholder="Years using Python">         
+              
+            </div>
+          </div>      
+          <div class="form-group">
+            <label for="books" class="col-sm-2 control-label">No. Python Books :</label>
+            <div class="col-sm-3">
+              <input type="text" class="form-control inputstl" id="books" placeholder="Number of Python Books :">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="projects" class="col-sm-2 control-label">No. Projects:</label>
+            <div class="col-sm-3">
+              <input type="text" class="form-control inputstl" id="projects" placeholder="Projects Made">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="earn" class="col-sm-2 control-label">Earned :</label>
+            <div class="col-sm-3">
+              <input type="text" class="form-control inputstl" id="earn" placeholder="£ Earned">
+            </div>
+          </div>            
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+              
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-4">
+         
+              <input type="button" class="btn btn-lg btn-block btn-success" name="submit" id="btn_id" value="submit!" onclick="SubmitVars()"/>
+            </div>
+          </div>
+          <p id="demo">Rating (1500 is good)</p>
+        </form>
+        <a href="https://github.com/RGGH/API-3">ML + FastAPI code on GitHub</a> 
 <br>
 <a href="https://redandgreen.co.uk">www.redandgreen.co.uk</a>
-</form>
-
-
-</div>
-</div>
-
-
-
-</div>
+       </div> 
 </body>
 </html>
