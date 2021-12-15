@@ -63,9 +63,10 @@
           <div class="form-group">
             <div class="col-sm-offset-2 col-sm-4">
          
-              <input type="button" class="btn btn-lg btn-block btn-success" name="submit" id="btn_id" value="submit!" onclick="SubmitVars()"/>
+              <input type="button" class="btn btn-lg btn-block btn-success" name="submit" id="btn_id" value="submit!" onclick='SubmitVars(); this.disabled = true;' />
             </div>
           </div>
+          <p id="msg"></p>
           <p id="demo">Rating (1500 is good)</p>
         </form>
         <a href="https://github.com/RGGH/API-3">ML + FastAPI code on GitHub</a> 
