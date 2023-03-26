@@ -18,7 +18,7 @@ jobs:
           known_hosts: unnecessary
 
       - name: Deploy with rsync
-        run: rsync -avz -e "ssh -p ${{ secrets.RAG_PORT }}" ./ ${{ secrets.RAG_USER }}@${{ secrets.RAG_HOST }}:/var/www/pancake/
+        run: rsync -avz -e "ssh -p ${{ secrets.RAG_PORT }}" ./ ${{ secrets.RAG_USER }}@${{ secrets.RAG_HOST }}:/var/www/html/pancake
         
 
       - name: Rag
