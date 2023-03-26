@@ -17,7 +17,7 @@ let _data = {
         earn: vearn,
   }
   
-  const response = await fetch('https://redandgreen.co.uk/pancake/demo/vars', {
+  const response = await fetch('https://redandgreen.co.uk/pancake/demo.html/vars', {
     method: "POST",
     body: JSON.stringify(_data),
     headers: {"Content-type": "application/json; charset=UTF-8"}
