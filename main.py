@@ -9,7 +9,8 @@ app = FastAPI()
 output = {}
 
 origins = [
-    "http://redandgreen.co.uk/"
+    "http://redandgreen.co.uk/",
+    "https://redandgreen.co.uk/"
 ]
 
 app.add_middleware(
