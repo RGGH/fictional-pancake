@@ -31,6 +31,7 @@ jobs:
           username: ${{ secrets.RAG_USER }}
           key: ${{ secrets.RAG_SECRETKEY }}
           port: ${{ secrets.RAG_PORT }}
+          EXCLUDE: "/.git, /.github, /dist/, /node_modules/"
           script: |
             cd /var/www/pancake/
             git fetch origin master
