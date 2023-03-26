@@ -1,4 +1,6 @@
-# ML Demo
+![example workflow]https://github.com/RGGH/fictional-pancake/actions/workflows/main.yaml/badge.svg
+
+# FastAPI + ML Demo
 
 ### html, javascript, FastAPI
 
