@@ -1,4 +1,3 @@
-import uvicorn
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
@@ -47,6 +46,3 @@ def vars(data: request_body)->dict:
 
 
 
-
-# if __name__ == "__main__":
-#     uvicorn.run("app.api:app", host="0.0.0.0", port=8000, reload=True)
