@@ -1,6 +1,6 @@
 ![workflow](https://github.com/RGGH/fictional-pancake/actions/workflows/main.yml/badge.svg)
 
-# FastAPI + ML Demo
+# FastAPI + ML Demo | work-in-progress
 
 ### html, javascript, FastAPI
 
