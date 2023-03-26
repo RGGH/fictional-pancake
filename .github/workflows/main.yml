@@ -13,10 +13,10 @@ jobs:
       - name: Deploy to Server
         uses: easingthemes/ssh-deploy@v2.1.7
         env:
-          SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
+          SSH_PRIVATE_KEY: ${{ secrets.RAG_PUBKEY }}
           ARGS: "-avz --delete"
-          REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
-          REMOTE_PORT: ${{ secrets.REMOTE_PORT }}
-          REMOTE_USER: ${{ secrets.REMOTE_USER }}
-          TARGET: ${{ secrets.REMOTE_TARGET }}
+          REMOTE_HOST: ${{ secrets.RAG_ADDRESS }}
+          REMOTE_PORT: ${{ secrets.RAG_PORT }}
+          REMOTE_USER: ${{ secrets.RAG_USER }}
+          TARGET: ${{ secrets.RAG_TARGET }}
           EXCLUDE: "/.git, /.github, /dist/, /node_modules/"
