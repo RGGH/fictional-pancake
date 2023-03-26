@@ -38,7 +38,7 @@ class request_body(BaseModel):
     earn: int
 
 
-@app.post("/pancake/vars")
+@app.post("/vars")
 def vars(data: request_body)->dict:
     ## result
     rating = neural_net.predict([[data.weeks,data.years,data.books,data.projects,data.earn]])
