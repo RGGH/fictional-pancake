@@ -1,4 +1,4 @@
-![example workflow]https://github.com/RGGH/fictional-pancake/actions/workflows/main.yaml/badge.svg
+![workflow]https://github.com/RGGH/fictional-pancake/actions/workflows/main.yml/badge.svg
 
 # FastAPI + ML Demo
 
