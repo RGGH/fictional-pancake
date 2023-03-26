@@ -18,13 +18,13 @@ jobs:
           known_hosts: unnecessary
 
       - name: Deploy with rsync
-        run: rsync -avz -e "ssh -p ${{ secrets.RAG_PORT }}" ./ ${{ secrets.RAG_USER }}@${{ secrets.RAG_HOST }}:/var/www/html/pancake
+        run: rsync -avz -e "ssh -p ${{ secrets.RAG_PORT }}" ./ ${{ secrets.RAG_USER }}@${{ secrets.RAG_ADDRESS }}:/var/www/html/pancake
         
 
       - name: Rag
         uses: appleboy/ssh-action@master
         with:
-          host: ${{ secrets.RAG_HOST }}
+          host: ${{ secrets.RAG_ADDRESS }}
           username: ${{ secrets.RAG_USER }}
           key: ${{ secrets.RAG_SECRETKEY }}
           port: ${{ secrets.RAG_PORT }}
