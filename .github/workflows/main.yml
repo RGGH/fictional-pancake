@@ -1,5 +1,22 @@
+name: Deploy
+
 on:
   push:
     branches:
-    - main
-    - release/*
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deploy to Server
+        uses: easingthemes/ssh-deploy@v2.1.7
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
+          ARGS: "-avz --delete"
+          REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
+          REMOTE_PORT: ${{ secrets.REMOTE_PORT }}
+          REMOTE_USER: ${{ secrets.REMOTE_USER }}
+          TARGET: ${{ secrets.REMOTE_TARGET }}
+          EXCLUDE: "/.git, /.github, /dist/, /node_modules/"

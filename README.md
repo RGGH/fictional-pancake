@@ -32,6 +32,6 @@ allow_headers=["*"],
 https://www.stackhawk.com/blog/configuring-cors-in-fastapi/
 -----------------------------------------------------------
 
-Try the code here : http://redandgreen.co.uk/demo.html
+Try the code here : http://redandgreen.co.uk/pancake/demo.html
 
 ---
