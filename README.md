@@ -16,21 +16,21 @@ app = FastAPI()
 output = {}
 
 origins = [
-    "http://redandgreen.co.uk"
+"http://redandgreen.co.uk"
 ]
 
 app.add_middleware(
-    CORSMiddleware,
-    allow_origins=origins,
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
+CORSMiddleware,
+allow_origins=origins,
+allow_credentials=True,
+allow_methods=["*"],
+allow_headers=["*"],
 )
 
 ---
 
 https://www.stackhawk.com/blog/configuring-cors-in-fastapi/
----
+-----------------------------------------------------------
 
 Try the code here : http://redandgreen.co.uk/demo.html
 
