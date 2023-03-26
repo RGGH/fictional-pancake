@@ -21,7 +21,7 @@ jobs:
         run: ssh-keyscan -H ${{ secrets.RAG_ADDRESS }} >> ~/.ssh/known_hosts
 
       - name: Deploy with rsync
-        run: rsync -avz -e "ssh -p ${{ secrets.RAG_PORT }}" ./ ${{ secrets.RAG_USER }}@${{ secrets.RAG_ADDRESS }}:/var/www/html/pancake
+        run: rsync -rvz -e "ssh -p ${{ secrets.RAG_PORT }}" ./ ${{ secrets.RAG_USER }}@${{ secrets.RAG_ADDRESS }}:/var/www/html/pancake
         
 
       - name: Rag
