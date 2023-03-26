@@ -18,7 +18,7 @@ jobs:
           known_hosts: unnecessary
 
       - name: Adding Known Hosts
-        run: ssh-keyscan -p ${{ secrets.SSH_PORT}} -H ${{ secrets.SSH_HOST }}  >> ~/.ssh/known_hosts
+        run: ssh-keyscan -p ${{ secrets.RAG_PORT}} -H ${{ secrets.RAG_HOST }}  >> ~/.ssh/known_hosts
 
       - name: Deploy with rsync
         run: rsync -avz -e "ssh -p ${{ secrets.RAG_PORT }}" ./dist/ ${{ secrets.RAG_USER }}@${{ secrets.RAG_HOST }}:/var/www/pancake/
